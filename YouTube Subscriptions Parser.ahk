@@ -21,7 +21,7 @@
 #SingleInstance, Force ; Allow only one running instance of script
 #Persistent ; Keep the script permanently running until terminated
 #NoEnv ; Avoid checking empty variables for environment variables
-#Warn ; Enable warnings to assist with detecting common errors
+;#Warn ; Enable warnings to assist with detecting common errors
 #NoTrayIcon ; Disable the tray icon of the script
 ;#KeyHistory, 0 ; Keystroke and mouse click history
 ;ListLines, Off ; The script lines most recently executed
@@ -373,9 +373,9 @@ ControlHandler() {
 		Gui, App: -Disabled
 		Gui, About: Hide
 	} Else If (A_GuiControl = "BtnAboutAHK") {
-		Run, https://www.autohotkey.com/boards/memberlist.php?mode=viewprofile&u=56166
+		Run, https://www.autohotkey.com/boards/viewtopic.php?f=6&t=83584
 	} Else If (A_GuiControl = "BtnAboutGitHub") {
-		Run, https://www.autohotkey.com/boards/memberlist.php?mode=viewprofile&u=56166
+		Run, https://github.com/westoncampbell/YTSubsParserAHK
 	} Else If (A_GuiControl = "SB") {
 		If (A_GuiEvent = "RightClick") {
 			If (A_EventInfo = "2") {
